@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/championStatisticsView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/championStatisticsIconView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="5dp"
+                android:contentDescription="@string/championIconImage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/khazix_icon" />
+
+            <TextView
+                android:id="@+id/championStatisticsNameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/championName"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/championStatisticsIconView"
+                app:layout_constraintStart_toEndOf="@+id/championStatisticsIconView"
+                app:layout_constraintTop_toTopOf="@+id/championStatisticsIconView" />
+
+            <TextView
+                android:id="@+id/championStatisticsKDAView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/KDA"
+                android:textColor="#FFEB3B"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/championStatisticsNameView"
+                app:layout_constraintStart_toEndOf="@+id/championStatisticsNameView"
+                app:layout_constraintTop_toTopOf="@+id/championStatisticsNameView" />
+
+            <TextView
+                android:id="@+id/championStatisticsWinRateView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/Win_Rate"
+                android:textColor="#FFEB3B"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/championStatisticsKDAView"
+                app:layout_constraintStart_toEndOf="@+id/championStatisticsNameView" />
+
+            <TextView
+                android:id="@+id/championStatisticsCSView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/CS_min"
+                android:textColor="#FFEB3B"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/championStatisticsNameView"
+                app:layout_constraintTop_toBottomOf="@+id/championStatisticsKDAView" />
+
+            <TextView
+                android:id="@+id/championKDA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/defaultTextView"
+                android:textColor="#FFEB3B"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/championStatisticsKDAView"
+                app:layout_constraintStart_toEndOf="@+id/championStatisticsKDAView"
+                app:layout_constraintTop_toTopOf="@+id/championStatisticsKDAView" />
+
+            <TextView
+                android:id="@+id/championWinRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/defaultTextView"
+                android:textColor="#FFEB3B"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/championStatisticsWinRateView"
+                app:layout_constraintStart_toEndOf="@+id/championStatisticsWinRateView"
+                app:layout_constraintTop_toTopOf="@+id/championStatisticsWinRateView" />
+
+            <TextView
+                android:id="@+id/championCSmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/defaultTextView"
+                android:textColor="#FFEB3B"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/championStatisticsCSView"
+                app:layout_constraintStart_toEndOf="@+id/championStatisticsCSView"
+                app:layout_constraintTop_toTopOf="@+id/championStatisticsCSView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

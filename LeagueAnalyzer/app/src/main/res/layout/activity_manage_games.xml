@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lol_wallpaper"
+    android:backgroundTint="#B3FFFFFF"
+    android:backgroundTintMode="src_over"
+    tools:context=".ManageGamesActivity">
+
+    <TextView
+        android:id="@+id/gameInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/Game_Info"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/summonersRiftTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Summoners_Rift"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameInfoTextView" />
+
+    <TextView
+        android:id="@+id/championTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Champion"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summonersRiftTextView" />
+
+    <TextView
+        android:id="@+id/roleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Role"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/championTextView" />
+
+    <TextView
+        android:id="@+id/gameDurationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Game_Duration"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roleTextView" />
+
+    <TextView
+        android:id="@+id/farmTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Farm"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameDurationTextView" />
+
+    <TextView
+        android:id="@+id/killsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Kills"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/farmTextView" />
+
+    <TextView
+        android:id="@+id/deathsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Deaths"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/killsTextView" />
+
+    <TextView
+        android:id="@+id/assistsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Assists"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deathsTextView" />
+
+    <TextView
+        android:id="@+id/totalTeamKillsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Total_Team_Kills"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assistsTextView" />
+
+    <TextView
+        android:id="@+id/victoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Victory"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalTeamKillsTextView" />
+
+    <Spinner
+        android:id="@+id/championSpinner"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/championTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/championTextView" />
+
+    <Spinner
+        android:id="@+id/roleSpinner"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/roleTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/roleTextView" />
+
+    <EditText
+        android:id="@+id/gameDurationEditText"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="@string/Enter_Game_Duration"
+        android:ems="10"
+        android:hint="@string/Enter_Game_Duration"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/gameDurationTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gameDurationTextView" />
+
+    <EditText
+        android:id="@+id/farmEditText"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="@string/Enter_Farm"
+        android:ems="10"
+        android:hint="@string/Enter_Farm"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/farmTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/farmTextView" />
+
+    <EditText
+        android:id="@+id/killsEditText"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="@string/Enter_Kills"
+        android:ems="10"
+        android:hint="@string/Enter_Kills"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/killsTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/killsTextView" />
+
+    <EditText
+        android:id="@+id/deathsEditText"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="@string/Enter_Deaths"
+        android:ems="10"
+        android:hint="@string/Enter_Deaths"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/deathsTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/deathsTextView" />
+
+    <EditText
+        android:id="@+id/assistsEditText"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="@string/Enter_Assists"
+        android:ems="10"
+        android:hint="@string/Enter_Assists"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/assistsTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/assistsTextView" />
+
+    <EditText
+        android:id="@+id/totalTeamKillsEditText"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="@string/Enter_Total_Team_Kills"
+        android:ems="10"
+        android:hint="@string/Enter_Total_Team_Kills"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/totalTeamKillsTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/totalTeamKillsTextView" />
+
+    <Spinner
+        android:id="@+id/victorySpinner"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/victoryTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/victoryTextView" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="submitGame"
+        android:text="@string/Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/victorySpinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

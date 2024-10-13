@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/leagueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/League"
+        android:textColor="#B8A70B"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/analyzerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/Analyzer"
+        android:textColor="#B8A70B"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leagueTextView" />
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/mainImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/analyzerTextView"
+        app:srcCompat="@drawable/main_homepage" />
+
+    <ImageView
+        android:id="@+id/ironImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/ironRankImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iron_rank" />
+
+    <ImageView
+        android:id="@+id/challengerImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/challengerRankImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/challenger_rank" />
+
+    <ImageButton
+        android:id="@+id/ryzeImageButton"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/ryzeImage"
+        android:onClick="showActivityChampions"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage"
+        app:srcCompat="@drawable/ryze" />
+
+    <ImageButton
+        android:id="@+id/matchFoundImageButton"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/matchFoundImage"
+        android:onClick="showActivityManageGames"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage"
+        app:srcCompat="@drawable/match_found" />
+
+    <TextView
+        android:id="@+id/championsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/Champions"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/ryzeImageButton"
+        app:layout_constraintStart_toStartOf="@+id/ryzeImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/ryzeImageButton" />
+
+    <TextView
+        android:id="@+id/manageGamesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/Manage_Games"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/matchFoundImageButton"
+        app:layout_constraintStart_toStartOf="@+id/matchFoundImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/matchFoundImageButton" />
+
+    <ImageButton
+        android:id="@+id/summonersRiftImageButton"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/summonersRiftImage"
+        android:onClick="showActivityGameModes"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/championsTextView"
+        app:srcCompat="@drawable/summoners_rift" />
+
+    <TextView
+        android:id="@+id/gameModesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/Game_Modes"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/summonersRiftImageButton"
+        app:layout_constraintStart_toStartOf="@+id/summonersRiftImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/summonersRiftImageButton" />
+
+    <ImageButton
+        android:id="@+id/poroImageButton"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/poroImage"
+        android:onClick="showActivityStatistics"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manageGamesTextView"
+        app:srcCompat="@drawable/poro" />
+
+    <TextView
+        android:id="@+id/statisticsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/Statistics"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/poroImageButton"
+        app:layout_constraintStart_toStartOf="@+id/poroImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/poroImageButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<resources>
+
+    <string name="defaultTextView">Text View</string>
+
+    <string name="defaultImageView">Default Image</string>
+
+    <!-- Activity Main -->
+
+    <string name="app_name">LeagueAnalyzer</string>
+    <string name="League">League</string>
+    <string name="Analyzer">Analyzer</string>
+    <string name="Champions">Champions</string>
+    <string name="Manage_Games">Manage Games</string>
+    <string name="Game_Modes">Game Modes</string>
+    <string name="Statistics">Statistics</string>
+
+    <string name="mainImage">Main Image</string>
+    <string name="ironRankImage">Iron Rank Image</string>
+    <string name="challengerRankImage">Challenger Rank Image</string>
+    <string name="ryzeImage">Ryze Image</string>
+    <string name="matchFoundImage">Match Found Image</string>
+    <string name="summonersRiftImage">Summoners Rift Image</string>
+    <string name="poroImage">Poro Image</string>
+
+    <!-- View Champion -->
+
+    <string name="championName">Kha\'Zix</string>
+    <string name="championRole">ASSASSIN</string>
+
+    <string name="championIconImage">Champion Icon Image</string>
+
+    <!-- Activity Champion Overview -->
+
+    <string name="Attributes">Attributes</string>
+    <string name="Abilities">Abilities</string>
+
+    <!-- Activity Game Modes -->
+
+    <string name="Map">Map:</string>
+
+    <string name="gameModeMapImage">Game Mode Map Image</string>
+
+    <!-- Activity Manage Games -->
+
+    <string name="Game_Info">Game Info</string>
+    <string name="Summoners_Rift">Summoner\'s Rift</string>
+    <string name="Champion">Champion:</string>
+    <string name="Role">Role:</string>
+    <string name="Game_Duration">Game Duration:</string>
+    <string name="Farm">Farm:</string>
+    <string name="Kills">Kills:</string>
+    <string name="Deaths">Deaths:</string>
+    <string name="Assists">Assists:</string>
+    <string name="Total_Team_Kills">Total Team Kills:</string>
+    <string name="Victory">Victory:</string>
+    <string name="Submit">Submit</string>
+
+    <string name="Enter_Game_Duration">Enter Game Duration</string>
+    <string name="Enter_Farm">Enter Farm</string>
+    <string name="Enter_Kills">Enter Kills</string>
+    <string name="Enter_Deaths">Enter Deaths</string>
+    <string name="Enter_Assists">Enter Assists</string>
+    <string name="Enter_Total_Team_Kills">Enter Total Team Kills</string>
+
+    <!-- Activity Statistics -->
+
+    <string name="Win_Rate">Win Rate:</string>
+    <string name="Average_KDA">Average KDA:</string>
+    <string name="Preferred_Role">Preferred Role:</string>
+    <string name="Performance">Performance:</string>
+    <string name="View_Champion_Statistics">View Champion Statistics</string>
+
+    <!-- Activity Champion Statistics -->
+
+    <string name="KDA">KDA:</string>
+    <string name="CS_min">CS/min:</string>
+
+</resources>
